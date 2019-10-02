@@ -1,5 +1,5 @@
 # DHT-Chord
-#### Distributed Hash Table using the Chord Protocol for storing books and their respective mappings
+#### Distributed Hash Table using the Chord Protocol for storing books and their respective genres.
 
 ![dht image](dht.PNG)
 
@@ -29,20 +29,20 @@ There is a makefile provided that can be used to easily build and run the projec
 
 To run the code, follow the steps:
 (Everything needs to be run from the directory in which the files are present)
-* Compile the project using:
+* Compile the project using: \
   javac -cp ".:/usr/local/Thrift/*" *.java -d .
-* Run the SuperNode using the following command
+* Run the SuperNode using the following command \
   java -cp ".:/usr/local/Thrift/*" SuperNode
-* Run each Node of the DHT, for eg:
-  java -cp ".:/usr/local/Thrift/*" Node localhost 8080
-  java -cp ".:/usr/local/Thrift/*" Node localhost 9085
-  java -cp ".:/usr/local/Thrift/*" Node localhost 9095
+* Run each Node of the DHT, for eg: \
+  java -cp ".:/usr/local/Thrift/*" Node localhost 8080 \
+  java -cp ".:/usr/local/Thrift/*" Node localhost 9085 \
+  java -cp ".:/usr/local/Thrift/*" Node localhost 9095 \
   (Note: We pass two parameters, one ip and other port in the command line )
-* Next, we then run the Client on the local node to set the book details using:
-  java -cp ".:/usr/local/Thrift/*" Client set shakespeares.txt
-  (Note: We pass two parameters, one set and other the <fileName> which has the book details,   separated by a space)
-* Next, we run the Client on the local node to get the book genre using:
-  java -cp ".:/usr/local/Thrift/*" Client get Venus and Adonis
+* Next, we then run the Client on the local node to set the book details using: \
+  java -cp ".:/usr/local/Thrift/*" Client set shakespeares.txt \
+  (Note: We pass two parameters, one set and other the <fileName> which has the book details, separated by a space)
+* Next, we run the Client on the local node to get the book genre using: \
+  java -cp ".:/usr/local/Thrift/*" Client get Venus and Adonis \
   (Note: We pass two parameters, one get and other the <bookName>)
 
 
