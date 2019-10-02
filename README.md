@@ -24,7 +24,6 @@ Sample data has been provided in a [file](gen-java/shakespeares.txt).
 
 ## INSTRUCTIONS
 
-There is a makefile provided that can be used to easily build and run the project.
 *YOU NEED JAVA 1.8+ AND THRIFT 0.9+ TO RUN THIS SYSTEM*
 
 To run the code, follow the steps:
